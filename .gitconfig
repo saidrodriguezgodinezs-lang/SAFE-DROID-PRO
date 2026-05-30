@@ -1,3 +1,5 @@
 [user]
 	name = TuNombre
 	email = tu@email.com
+[http]
+	postBuffer = 524288000
