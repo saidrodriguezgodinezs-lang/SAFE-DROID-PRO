@@ -1,0 +1,5 @@
+Ljava/net/URL; | Conexión a internet oculta
+getDeviceId | Robo de IMEI
+Ljava/lang/Runtime; | Ejecución de comandos
+http:// | Conexión a servidor externo
+Ljavax/crypto/Cipher; | Uso de encriptación

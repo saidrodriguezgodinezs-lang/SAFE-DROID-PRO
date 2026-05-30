@@ -1,0 +1,9 @@
+=== REPORTE DE SEGURIDAD SAFE-DROID ===
+Fecha: 20260530-112744
+Amenazas detectadas en el código:
+
+- Ljava/net/URL; | Conexión a internet oculta (posible spyware)
+- getDeviceId | Robo de identidad del hardware (IMEI)
+- Ljavax/crypto/Cipher; | Uso de encriptación (para ocultar datos)
+- Ljava/lang/Runtime; | Ejecución de comandos del sistema (muy sospechoso)
+- http:// | Conexión insegura a servidor externo

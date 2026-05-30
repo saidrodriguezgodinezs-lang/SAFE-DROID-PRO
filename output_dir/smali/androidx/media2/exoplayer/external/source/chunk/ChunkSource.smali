@@ -1,0 +1,106 @@
+.class public interface abstract Landroidx/media2/exoplayer/external/source/chunk/ChunkSource;
+.super Ljava/lang/Object;
+.source "ChunkSource.java"
+
+
+# virtual methods
+.method public abstract getAdjustedSeekPositionUs(JLandroidx/media2/exoplayer/external/SeekParameters;)J
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "positionUs",
+            "seekParameters"
+        }
+    .end annotation
+.end method
+
+.method public abstract getNextChunk(JJLjava/util/List;Landroidx/media2/exoplayer/external/source/chunk/ChunkHolder;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "playbackPositionUs",
+            "loadPositionUs",
+            "queue",
+            "out"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(JJ",
+            "Ljava/util/List<",
+            "+",
+            "Landroidx/media2/exoplayer/external/source/chunk/MediaChunk;",
+            ">;",
+            "Landroidx/media2/exoplayer/external/source/chunk/ChunkHolder;",
+            ")V"
+        }
+    .end annotation
+.end method
+
+.method public abstract getPreferredQueueSize(JLjava/util/List;)I
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "playbackPositionUs",
+            "queue"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(J",
+            "Ljava/util/List<",
+            "+",
+            "Landroidx/media2/exoplayer/external/source/chunk/MediaChunk;",
+            ">;)I"
+        }
+    .end annotation
+.end method
+
+.method public abstract maybeThrowError()V
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+.end method
+
+.method public abstract onChunkLoadCompleted(Landroidx/media2/exoplayer/external/source/chunk/Chunk;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "chunk"
+        }
+    .end annotation
+.end method
+
+.method public abstract onChunkLoadError(Landroidx/media2/exoplayer/external/source/chunk/Chunk;ZLjava/lang/Exception;J)Z
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "chunk",
+            "cancelable",
+            "e",
+            "blacklistDurationMs"
+        }
+    .end annotation
+.end method

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/customAds2" android:layout_width="fill_parent" android:layout_height="150.0dip" android:layout_marginBottom="15.0dip" android:src="@drawable/cover8" android:scaleType="fitXY" android:layout_alignParentTop="true" />
+    <RelativeLayout android:id="@id/native_banner_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_below="@id/customAds2" />
+    <RelativeLayout android:id="@id/container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/native_banner_view">
+        <include android:id="@id/ad_lay" android:visibility="gone" layout="@layout/native_ad_list_item" />
+        <View android:background="@color/black" android:layout_width="fill_parent" android:layout_height="3.0dip" android:layout_above="@id/myBanner" />
+        <RelativeLayout android:id="@id/myBanner" android:layout_width="wrap_content" android:layout_height="@dimen/banner_height" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:layout_above="@id/myBanner" android:layout_marginVertical="15.0dip">
+            <Button android:textStyle="bold|italic" android:id="@id/start" android:background="@drawable/round_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="50.0dip" android:layout_marginBottom="10.0dip" android:text="Start" android:layout_marginHorizontal="50.0dip" android:layout_marginVertical="10.0dip" />
+            <Button android:textStyle="bold|italic" android:id="@id/customAds" android:background="@drawable/round_btn_red" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:layout_marginRight="50.0dip" android:layout_marginBottom="10.0dip" android:text="@string/earn_coins" android:layout_marginHorizontal="50.0dip" app:backgroundTint="@null" />
+            <Button android:textStyle="bold|italic" android:id="@id/share" android:background="@drawable/round_btn_blue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:layout_marginRight="50.0dip" android:text="@string/share" android:layout_marginHorizontal="50.0dip" app:backgroundTint="@null" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/loadingScreen" android:background="#1bffffff" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:background="#92000000" android:layout_width="fill_parent" android:layout_height="300.0dip" android:layout_marginLeft="40.0dip" android:layout_marginRight="40.0dip" android:layout_marginBottom="120.0dip" android:layout_alignParentBottom="true" android:layout_marginHorizontal="40.0dip">
+            <ProgressBar android:id="@id/progressBar" android:layout_width="120.0dip" android:layout_height="120.0dip" android:indeterminate="true" android:layout_centerInParent="true" />
+            <TextView android:textSize="25.0sp" android:textStyle="bold|italic" android:textColor="@color/white" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/loading" android:layout_below="@id/progressBar" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

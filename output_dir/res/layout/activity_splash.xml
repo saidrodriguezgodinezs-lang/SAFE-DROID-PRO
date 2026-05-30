@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="300.0dip" android:layout_height="200.0dip" android:layout_marginTop="-10.0dip" android:src="@drawable/rectangle" android:layout_marginEnd="-90.0dip" android:layout_alignParentEnd="true" />
+    <ImageView android:layout_width="300.0dip" android:layout_height="200.0dip" android:layout_marginTop="-10.0dip" android:src="@drawable/rectangle" android:alpha="0.7" android:layout_marginEnd="-140.0dip" android:layout_alignParentEnd="true" />
+    <ImageView android:layout_width="300.0dip" android:layout_height="200.0dip" android:layout_marginTop="-10.0dip" android:src="@drawable/rectangle" android:alpha="0.4" android:layout_marginEnd="-190.0dip" android:layout_alignParentEnd="true" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="20.0sp" android:textStyle="bold|italic" android:textColor="@color/white" android:gravity="center" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/app_name" android:shadowColor="@color/black" android:shadowDx="-1.0" android:shadowDy="0.0" android:shadowRadius="5.0" />
+        <ImageView android:layout_width="170.0dip" android:layout_height="170.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/icon" />
+    </LinearLayout>
+    <ImageView android:layout_width="200.0dip" android:layout_height="200.0dip" android:src="@drawable/circle" android:layout_alignParentBottom="true" android:alpha="1.0" android:layout_marginStart="-75.0dip" android:layout_alignParentStart="true" />
+    <ImageView android:id="@id/circle2" android:layout_width="150.0dip" android:layout_height="150.0dip" android:layout_marginBottom="-75.0dip" android:src="@drawable/circle2" android:layout_above="@id/progress" android:layout_alignParentBottom="true" android:alpha="0.6" android:layout_alignParentStart="true" />
+    <ProgressBar android:id="@id/progress" android:layout_width="fill_parent" android:layout_height="80.0dip" android:max="100" android:progress="25" android:indeterminate="true" android:layout_alignParentBottom="true" style="?android:progressBarStyleHorizontal" />
+</RelativeLayout>

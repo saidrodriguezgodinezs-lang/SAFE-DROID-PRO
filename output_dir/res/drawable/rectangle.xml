@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rotate android:fromDegrees="45.0" android:toDegrees="45.0" android:pivotX="50.0%" android:pivotY="50.0%"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shape android:shape="line" android:top="20.0dip">
+        <stroke android:width="20.0dip" android:color="@color/blue_100" />
+    </shape>
+</rotate>
